@@ -1,0 +1,302 @@
+/* INDEX */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+/* -----menu navegacion -----*/
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #260454;
+    height: 34px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+
+}
+
+.header__navbar--principal li {
+    display: inline-block;
+}
+
+.header__navbar {
+    margin-top: 7px
+}
+
+.header__navbar--principal li a {
+
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+
+}
+
+
+
+body{
+    background-color: rgb(15, 2, 27);
+
+}
+
+
+
+
+.main__index {
+    display: flex;
+    
+    margin-top: 25px;
+    justify-content: space-evenly;
+}
+
+h1 {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: #ffffff;
+    text-align: left;
+    margin-left: 35px;
+    margin-top: 25px;
+}
+
+.titulo {
+    color: #650E77;
+    margin-left: 65px;
+    margin-top: 20px;
+    font-size: 2rem;
+   
+    
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+main section h2{
+    color: whitesmoke;
+    margin-left: 25px;
+    margin-top: 30px;
+    
+    font-family: 'Kdam Thmor Pro', sans-serif;
+
+}
+iframe {
+    width: 350px;
+    height: 250px;
+    margin-left: 25px;
+    margin-top: 5px;
+
+}
+
+p {
+    width: 250px;
+    margin-left: 25px;
+    margin-top: 5px;
+    color: rgb(216, 211, 228);
+}
+
+.noticias__titulo {
+    font-size: 2rem;
+    color: #650E77;
+    margin-left: 65px;
+    margin-top: 20px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+
+}
+
+.noticias {
+    display: flex;
+    margin-left: 45px;
+}
+
+.noticias__img {
+    width: 220px;
+    height: 150px;
+    margin-left: 25px;
+    margin-top: 30px;
+}
+
+
+/* ------footer-----*/
+
+.footer {
+    display: flex;
+    background-color: #260454;
+    width: 100%;
+    height: 20vh;
+
+
+
+}
+
+img {
+    margin-left: 70px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.footer_menu li {
+
+    color: aliceblue;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    margin-top: 17px;
+    margin-left: 45px;
+}
+
+a:hover {
+    transition: background-color .5s;
+    background-color: rgb(234, 106, 14);
+}
+
+.footer_menu li a {
+    text-decoration: none;
+    color: aliceblue;
+
+
+}
+
+
+
+/* --------PAGINA TCG--------- */
+
+.body__tcg {
+
+    background-image: url('../img/fondo-magic.webp');
+    background-size: cover;
+}
+
+.body__pokemon {
+    background-image: url('../img/fondo\ pokemon.jpg');
+    background-size: cover;
+}
+
+.tcg__menu {
+    display: flex;
+
+}
+
+.tcg__menu {
+    justify-content: space-evenly
+}
+
+.tcg__menu li {
+    margin-left: 50px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    list-style-image: url('../img/favicon2.ico');
+
+
+}
+
+.tcg__menu li a {
+    text-decoration: none;
+}
+
+.tcg__seccion {
+    display: flex;
+    justify-content: center
+}
+
+.tcg__img {
+    height: 250px;
+    align-items: center;
+}
+
+.tcg__parrafo {
+    -webkit-text-stroke: 0.5px rgb(3, 2, 2);
+    color: rgb(216, 211, 228);
+    text-shadow: 0 0 2px rgb(157, 7, 7);
+
+}
+
+
+/* -----tienda---- */
+
+.body__tienda{
+    background-image: url('../img/tienda--fondo.png');
+    background-size: cover;
+}
+
+.tienda__productos {
+    margin-top: 40px;
+    margin-left: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.producto--img {
+    height: 180px;
+    margin-top: 25px;
+
+}
+
+.producto--titulo {
+    color: aliceblue;
+    text-align: center;
+    margin-left: 68px;
+
+}
+
+.producto--precio {
+    color: aliceblue;
+    margin-left: 138px;
+
+}
+
+
+/*----- blog -----*/
+.main__blog {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.main__blog--parrafo {
+    width: 75%;
+    margin-top: 10px;
+    margin-left: 10%;
+}
+
+.blog__img {
+    width: 20%;
+    margin-left: 35%;
+
+}
+
+
+.body__blog{
+    background-image: url('../img/blogfondo.jpg');
+    background-size: contain;
+}
+
+/*------ranking------ */
+
+
+.body__ranking{
+
+    background-image: url('../img/bodyranking.jpg');
+    background-size: cover;
+}
+.main__ranking {
+    margin-top: 40px;
+    margin-left: 5vh;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.ranking--img {
+    height: 70px;
+    margin-top: 25px;
+
+}
+
+.ranking--desc{
+    color: aliceblue;
+    text-align: center;
+    margin-left: 68px;
+
+}
+
+.ranking--puntaje {
+    color: aliceblue;
+    margin-left: 138px;
+
+}
