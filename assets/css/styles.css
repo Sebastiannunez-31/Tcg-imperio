@@ -36,7 +36,7 @@
 
 
 
-body{
+body {
     background-color: rgb(15, 2, 27);
 
 }
@@ -46,7 +46,7 @@ body{
 
 .main__index {
     display: flex;
-    
+
     margin-top: 25px;
     justify-content: space-evenly;
 }
@@ -59,23 +59,23 @@ h1 {
     margin-top: 25px;
 }
 
-.titulo {
+.seccion__titulo {
     color: #650E77;
     margin-left: 65px;
     margin-top: 20px;
     font-size: 2rem;
-   
-    
     font-family: 'Kdam Thmor Pro', sans-serif;
 }
-main section h2{
+
+main section h2 {
     color: whitesmoke;
     margin-left: 25px;
     margin-top: 30px;
-    
+
     font-family: 'Kdam Thmor Pro', sans-serif;
 
 }
+
 iframe {
     width: 350px;
     height: 250px;
@@ -91,14 +91,7 @@ p {
     color: rgb(216, 211, 228);
 }
 
-.noticias__titulo {
-    font-size: 2rem;
-    color: #650E77;
-    margin-left: 65px;
-    margin-top: 20px;
-    font-family: 'Kdam Thmor Pro', sans-serif;
 
-}
 
 .noticias {
     display: flex;
@@ -131,7 +124,7 @@ img {
     margin-bottom: 5px;
 }
 
-.footer_menu li {
+.footer_menu {
 
     color: aliceblue;
     font-family: 'Kdam Thmor Pro', sans-serif;
@@ -155,60 +148,94 @@ a:hover {
 
 /* --------PAGINA TCG--------- */
 
-.body__tcg {
+.dropdown {
+    margin-top: 50px;
+    margin-left: 70px;
+    display: inline-block;
+    margin-bottom: 60px;
+    position: relative;
+  }
+  
+  .dd-button {
+    display: inline-block;
+    border: 1px solid gray;
+    border-radius: 20px;
+    padding: 10px 30px 10px 20px;
+    background-color: #650E77;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  
+  .dd-button:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid black;
+  }
+  
+  .dd-button:hover {
+    background-color: #eeeeee;
+  }
+  
+  
+  .dd-input {
+    display: none;
+  }
+  
+  .dd-menu {
+    position: absolute;
+    top: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0;
+    margin: 2px 0 0 0;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    list-style-type: none;
+  }
+  
+  .dd-input + .dd-menu {
+    display: none;
+  } 
+  
+  .dd-input:checked + .dd-menu {
+    display: block;
+  } 
+  
+  .dd-menu li {
+    padding: 10px 20px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  
+  .dd-menu li:hover {
+    background-color: #f6f6f6;
+  }
+  
+  .dd-menu li a {
+    display: block;
+    margin: -10px -20px;
+    padding: 10px 20px;
+  }
+  
+  .dd-menu li.divider{
+    padding: 0;
+    border-bottom: 1px solid #cccccc;
+  }
 
-    background-image: url('../img/fondo-magic.webp');
-    background-size: cover;
-}
-
-.body__pokemon {
-    background-image: url('../img/fondo\ pokemon.jpg');
-    background-size: cover;
-}
-
-.tcg__menu {
-    display: flex;
-
-}
-
-.tcg__menu {
-    justify-content: space-evenly
-}
-
-.tcg__menu li {
-    margin-left: 50px;
-    margin-top: 25px;
-    margin-bottom: 10px;
-    list-style-image: url('../img/favicon2.ico');
 
 
-}
-
-.tcg__menu li a {
-    text-decoration: none;
-}
-
-.tcg__seccion {
-    display: flex;
-    justify-content: center
-}
-
-.tcg__img {
-    height: 250px;
-    align-items: center;
-}
-
-.tcg__parrafo {
-    -webkit-text-stroke: 0.5px rgb(3, 2, 2);
-    color: rgb(216, 211, 228);
-    text-shadow: 0 0 2px rgb(157, 7, 7);
-
-}
 
 
 /* -----tienda---- */
 
-.body__tienda{
+.body__tienda {
     background-image: url('../img/tienda--fondo.png');
     background-size: cover;
 }
@@ -261,7 +288,7 @@ a:hover {
 }
 
 
-.body__blog{
+.body__blog {
     background-image: url('../img/blogfondo.jpg');
     background-size: contain;
 }
@@ -269,11 +296,12 @@ a:hover {
 /*------ranking------ */
 
 
-.body__ranking{
+.body__ranking {
 
     background-image: url('../img/bodyranking.jpg');
     background-size: cover;
 }
+
 .main__ranking {
     margin-top: 40px;
     margin-left: 5vh;
@@ -288,7 +316,7 @@ a:hover {
 
 }
 
-.ranking--desc{
+.ranking--desc {
     color: aliceblue;
     text-align: center;
     margin-left: 68px;
