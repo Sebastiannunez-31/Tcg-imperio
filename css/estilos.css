@@ -1,0 +1,281 @@
+/* INDEX */
+/* contenido de  */
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* -----menu navegacion -----*/
+.header {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #260454;
+  height: 34px;
+  font-family: 'Kdam Thmor Pro', sans-serif; }
+
+.header__navbar--principal li {
+  display: inline-block; }
+
+.header__navbar {
+  margin-top: 7px; }
+
+.header__navbar--principal li a {
+  text-decoration: none;
+  padding: 10px;
+  color: white; }
+
+body {
+  background-color: #0f021b; }
+
+.main__index {
+  display: flex;
+  margin-top: 25px;
+  justify-content: center; }
+
+.main__index2 {
+  display: flex;
+  margin: 10px;
+  justify-content: space-around; }
+
+h1 {
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  color: #ffffff;
+  text-align: left;
+  margin-left: 35px;
+  margin-top: 25px; }
+
+.seccion__titulo {
+  color: #650E77;
+  margin-left: 65px;
+  margin-top: 20px;
+  font-size: 2rem;
+  font-family: 'Kdam Thmor Pro', sans-serif; }
+
+main section h2 {
+  color: whitesmoke;
+  margin-left: 25px;
+  margin: 10px;
+  font-family: 'Kdam Thmor Pro', sans-serif; }
+
+iframe {
+  width: 350px;
+  height: 250px;
+  margin-left: 25px;
+  margin-top: 5px; }
+
+p {
+  width: 250px;
+  margin-left: 25px;
+  margin-top: 5px;
+  color: #d8d3e4;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-size: smaller; }
+
+.noticias {
+  display: flex; }
+
+.noticias__img {
+  width: 220px;
+  height: 150px;
+  margin-left: 25px; }
+
+/* galeria */
+.container-img {
+  width: 100%;
+  max-width: 1100px;
+  margin-left: 150px;
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 5px; }
+
+.container-img .box-img figure {
+  width: 100%;
+  height: 100%; }
+
+.container-img .box-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.container-img .box-img:nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  border: solid #aa058b 2px; }
+
+.container-img .box-img:nth-child(2) {
+  grid-column-start: 3;
+  grid-column-end: 7;
+  border: solid #aa058b 2px; }
+
+.container-img .box-img:nth-child(3) {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  border: solid #aa058b 2px; }
+
+.container-img .box-img:nth-child(4) {
+  grid-column-start: 6;
+  grid-column-end: 9;
+  border: solid #aa058b 2px; }
+
+.container-img .box-img:nth-child(5) {
+  grid-column-start: 9;
+  grid-column-end: 12;
+  border: solid #aa058b 2px; }
+
+.container-img .box-img:nth-child(6) {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  border: solid #aa058b 2px; }
+
+.container-img .box-img:nth-child(7) {
+  grid-column-start: 7;
+  grid-column-end: 12;
+  border: solid #aa058b 2px; }
+
+.container-img .box-img:hover {
+  border: solid #400466 3px; }
+
+/* ------footer-----*/
+.footer {
+  display: flex;
+  background-color: #260454;
+  width: 100%;
+  height: 20vh; }
+
+.footer__img {
+  margin-left: 70px;
+  margin-top: 5px;
+  margin-bottom: 5px; }
+
+.footer_menu {
+  color: aliceblue;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  margin-top: 17px;
+  margin-left: 45px; }
+
+a:hover {
+  transition: background-color .5s;
+  background-color: #ea6a0e; }
+
+.footer_menu li a {
+  text-decoration: none;
+  color: aliceblue; }
+
+/*----- blog -----*/
+.main__blog {
+  display: flex;
+  flex-direction: column;
+  justify-items: center; }
+
+.main__blog--parrafo {
+  width: 75%;
+  margin-top: 10px;
+  margin-left: 10%; }
+
+.blog__img {
+  width: 20%;
+  margin-left: 35%; }
+
+.body__blog {
+  background-image: url("../img/blogfondo.jpg");
+  background-size: contain; }
+
+/*------ranking------ */
+.container__img__ranking {
+  width: 100%;
+  max-width: 1100px;
+  margin-left: 150px;
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(5, 170px);
+  grid-gap: 5px; }
+
+.container__img__ranking .box__img__ranking div {
+  width: 100%;
+  height: 100%; }
+
+.container__img__ranking .box__img__ranking img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover; }
+
+.container__img__ranking .box__img__ranking p {
+  width: 100%;
+  height: auto;
+  margin: auto; }
+
+.player__name {
+  color: #fffefd; }
+
+.container__img__ranking .box__img__ranking hr {
+  background-color: #ffffff;
+  height: 3px; }
+
+.container__img__ranking .box__img__ranking h4 {
+  color: #ffffff;
+  margin-top: 40px; }
+
+.container__img__ranking .box__img__ranking:nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  border: solid #aa058b 2px;
+  text-align: center; }
+
+.container__img__ranking .box__img__ranking:nth-child(2) {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  border: solid #aa058b 2px;
+  text-align: center; }
+
+.container__img__ranking .box__img__ranking:nth-child(3) {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  border: solid #aa058b 2px;
+  text-align: center; }
+
+.container__img__ranking .box__img__ranking:nth-child(4) {
+  grid-column-start: 7;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  border: solid #aa058b 2px;
+  text-align: center; }
+
+.container__img__ranking .box__img__ranking:nth-child(5) {
+  grid-column-start: 9;
+  grid-column-end: 11;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  border: solid #aa058b 2px;
+  text-align: center; }
+
+.container__img__ranking .box__img__ranking:nth-child(6) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  border: solid #aa058b 2px;
+  text-align: center; }
+
+.container__img__ranking .box__img__ranking:nth-child(7) {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  border: solid #aa058b 2px;
+  text-align: center; }
+
+.container__img__ranking .box__img__ranking:hover {
+  border: solid #400466 3px; }
+
+section .animate__animated {
+  --animate-duration: 2s; }

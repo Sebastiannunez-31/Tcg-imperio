@@ -1,5 +1,7 @@
 /* INDEX */
 
+@import "variables";
+
 * {
     margin: 0;
     padding: 0;
@@ -376,5 +378,5 @@ a:hover {
     border: solid rgb(64, 4, 102) 3px;
 }
 section .animate__animated {
-    --animate-duration: 1s;
+    --animate-duration: 2s;
   }

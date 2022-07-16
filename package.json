@@ -1,0 +1,25 @@
+{
+  "name": "proyecto",
+  "version": "1.0.0",
+  "description": "<h1>\r Tcg- imperio\r <h1>\r <p> proyecto dedicado a los trading cards games y venta de productos asociados<p>\r <h2>\r Tecnologias Usadas\r <h2>\r <ul>\r <li>html5</li>\r <li>css</li>\r </ul>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sebastiannunez-31/Tcg-imperio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sebastiannunez-31/Tcg-imperio/issues"
+  },
+  "homepage": "https://github.com/Sebastiannunez-31/Tcg-imperio#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}
