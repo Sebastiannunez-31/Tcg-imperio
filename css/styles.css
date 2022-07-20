@@ -20,8 +20,10 @@
       color: #fffefd; }
   .header .navbar .carrito {
     height: 50px;
-    width: 50px;
-    margin-left: 750px; }
+    width: 50px; }
+  .header .navbar .carrito:hover {
+    background-color: #069097;
+    transition: background-color 0.2s; }
 
 a:hover {
   position: relative;
@@ -61,7 +63,6 @@ h1 {
 main section h2 {
   color: whitesmoke;
   margin-left: 25px;
-  margin: 10px;
   font-family: 'Kdam Thmor Pro', sans-serif; }
 
 iframe {
@@ -145,26 +146,25 @@ p {
   border: solid #400466 4px; }
 
 /* ------footer-----*/
-.footer {
-  display: flex;
-  background-color: #260454;
-  width: 100%;
-  height: 20vh; }
-
-.footer__img {
-  margin-left: 70px;
-  margin-top: 5px;
-  margin-bottom: 5px; }
-
-.footer_menu {
-  color: aliceblue;
-  font-family: 'Kdam Thmor Pro', sans-serif;
-  margin-top: 17px;
-  margin-left: 45px; }
-
-.footer_menu li a {
-  text-decoration: none;
-  color: aliceblue; }
+footer {
+  background-color: #260454; }
+  footer div {
+    padding: 4px; }
+    footer div .row {
+      margin: 0; }
+      footer div .row h5 {
+        color: #fffefd;
+        font-family: 'Kdam Thmor Pro', sans-serif; }
+      footer div .row a {
+        font-family: 'Kdam Thmor Pro', sans-serif;
+        text-decoration: none;
+        color: #fffefd; }
+    footer div img {
+      width: 150%;
+      height: 100%; }
+  footer div .footer__derechos {
+    color: #fffefd;
+    font-family: 'Kdam Thmor Pro', sans-serif; }
 
 /*----- blog -----*/
 .main__blog {
@@ -305,7 +305,8 @@ h6 {
   position: relative;
   background-color: #650E77;
   font-family: 'Kdam Thmor Pro', sans-serif;
-  border: none; }
+  border: none;
+  border-radius: 35px; }
 
 .row span:hover {
   background-color: #e793f4d7; }
@@ -320,3 +321,20 @@ h6 {
   width: 100%;
   margin: 15px;
   font-size: 16px; }
+
+/* ---- tienda----- */
+.main__tienda div {
+  transition: .5; }
+  .main__tienda div .card {
+    width: 14rem;
+    margin: 15px;
+    background-color: rgba(3, 60, 93, 0.6);
+    text-align: center; }
+  .main__tienda div h5 {
+    color: #fffefd;
+    font-family: 'Kdam Thmor Pro', sans-serif; }
+  .main__tienda div a {
+    background-color: #650E77;
+    border: none;
+    border-radius: 35px;
+    font-family: 'Kdam Thmor Pro', sans-serif; }
