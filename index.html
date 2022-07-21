@@ -20,7 +20,7 @@
 <body>
     <header class="header">
         <nav class="navbar navbar-expand-lg ">
-            <div class="container-fluid ">
+            <div class="container-fluid">
                 <img src="assets/img/tcglogowide.png" alt="">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -59,85 +59,126 @@
         TCG - IMPERIO
     </h1>
 
-    <h2 class="seccion__titulo">
-        Inicio
-    </h2>
-
     <!-- inicio secciones -->
-    <main class="main__index animate__animated animate__fadeIn">
-        <section>
+    <main class="main__index animate__animated animate__fadeIn row">
 
-            <article>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/b5W9t62t10I"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <h2> La guerra de la chispa ha llegado</h2>
-                <p>
-                    Tenemos una batalla que terminar.
-                    La Guerra de la Chispa presenta 36 planeswalkers y una historia como nunca antes has visto. El
-                    multiverso está en la línea. ¿Te unirás a la batalla?
-                    Juégalo antes que nadie el 25 de Abril desde #MTGArena
-                    Pre-lanzamiento 27 y 28 de Abril
-
-                </p>
-            </article>
-
+        <section class="carrusel ">
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="assets/img/poketcg.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Ultima edicion de Pokemon</h5>
+                            <p>Pokemon lanza edicion y producto especial</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="assets/img/cartas-evento-magick-3.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Evento de este mes</h5>
+                            <p>Estuvimos en la regional de Santiago, revisa el blog y enterate</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/ptgrn-Trophy-Header.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Ranking</h5>
+                            <p>Revisa nuestro ranking y enterate de las posiciones actuales</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </section>
 
-        <section>
 
-            <article>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/zIlxO1CYufs"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <h2>
-                    Pokemon lanza nuevo producto
-                </h2>
-                <p>
-
-                    Tenemos una batalla que terminar.
-                    La Guerra de la Chispa presenta 36 planeswalkers y una historia como nunca antes has visto. El
-                    multiverso está en la línea. ¿Te unirás a la batalla?
-                    Juégalo antes que nadie el 25 de Abril desde #MTGArena
-                    Pre-lanzamiento 27 y 28 de Abril
-
-                </p>
-            </article>
-
-        </section>
-
-        <section>
-
-            <article>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/zIlxO1CYufs"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-                <h2>
-                    Pokemon lanza nuevo producto
-                </h2>
-                <p>
-
-                    Tenemos una batalla que terminar.
-                    La Guerra de la Chispa presenta 36 planeswalkers y una historia como nunca antes has visto. El
-                    multiverso está en la línea. ¿Te unirás a la batalla?
-                    Juégalo antes que nadie el 25 de Abril desde #MTGArena
-                    Pre-lanzamiento 27 y 28 de Abril
-
-                </p>
-            </article>
-
-        </section>
-    </main>
+        <h2 class="seccion__titulo"> Trailers y Lanzamientos </h2>
+        <div class="container main__noticias">
 
 
-    <!-- seccion noticias -->
-    <h2 class="seccion__titulo">
-        Noticias
-    </h2>
-    <main class="main__index2">
+            <section>
+
+                <article>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/b5W9t62t10I"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <h2> La guerra de la chispa ha llegado</h2>
+                    <p>
+                        Tenemos una batalla que terminar.
+                        La Guerra de la Chispa presenta 36 planeswalkers y una historia como nunca antes has visto. El
+                        multiverso está en la línea. ¿Te unirás a la batalla?
+                        Juégalo antes que nadie el 25 de Abril desde #MTGArena
+                        Pre-lanzamiento 27 y 28 de Abril
+
+                    </p>
+                </article>
+
+            </section>
+
+            <section>
+
+                <article>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/zIlxO1CYufs"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <h2>
+                        Pokemon lanza nuevo producto
+                    </h2>
+                    <p>
+
+                        Tenemos una batalla que terminar.
+                        La Guerra de la Chispa presenta 36 planeswalkers y una historia como nunca antes has visto. El
+                        multiverso está en la línea. ¿Te unirás a la batalla?
+                        Juégalo antes que nadie el 25 de Abril desde #MTGArena
+                        Pre-lanzamiento 27 y 28 de Abril
+
+                    </p>
+                </article>
+
+            </section>
+
+            <section>
+
+                <article>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/zIlxO1CYufs"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <h2>
+                        Pokemon lanza nuevo producto
+                    </h2>
+                    <p>
+
+                        Tenemos una batalla que terminar.
+                        La Guerra de la Chispa presenta 36 planeswalkers y una historia como nunca antes has visto. El
+                        multiverso está en la línea. ¿Te unirás a la batalla?
+                        Juégalo antes que nadie el 25 de Abril desde #MTGArena
+                        Pre-lanzamiento 27 y 28 de Abril
+
+                    </p>
+                </article>
+
+            </section>
+        </div>
 
         <div class="noticias">
 
@@ -191,78 +232,78 @@
 
             </section>
         </div>
+
+        <h2 class="seccion__titulo"> Galeria </h2>
+
+        <div class="container-img">
+            <!-- hijo 1 -->
+            <div class="box-img">
+
+                <figure>
+                    <img src="assets/img/279262721_3243916392551087_7767350299547172909_n.jpg" alt="">
+                </figure>
+
+            </div>
+
+
+            <div class="box-img">
+
+                <figure>
+                    <img src="assets/img/275444676_3209697439306316_8232239509690686458_n.jpg" alt="">
+                </figure>
+            </div>
+
+            <!-- hijo 3 -->
+
+
+
+            <div class="box-img">
+
+                <figure>
+                    <img src="assets/img/275301921_3209698752639518_3727130085533141703_n.jpg" alt="">
+                </figure>
+
+            </div>
+
+            <div class="box-img">
+
+                <figure>
+                    <img src="assets/img/291228064_3294485384160854_8698023097400578615_n.jpg" alt="">
+                </figure>
+
+            </div>
+
+
+            <div class="box-img">
+
+                <figure>
+                    <img src="assets/img/bestteam_theburtons_fm.jpg.opdownload" alt="">
+                </figure>
+
+            </div>
+
+
+            <div class="box-img">
+
+                <figure>
+                    <img src="assets/img/torneo-magic.jpg" alt="">
+                </figure>
+
+            </div>
+
+            <div class="box-img">
+
+                <figure>
+                    <img src="assets/img/gppor_summit_liliana.jpg" alt="">
+                </figure>
+
+            </div>
+        </div>
+
+
+
+
     </main>
-
-    <!-- galeria -->
-
-    <h2 class="seccion__titulo"> Galeria </h2>
-
-    <div class="container-img">
-        <!-- hijo 1 -->
-        <div class="box-img">
-
-            <figure>
-                <img src="assets/img/279262721_3243916392551087_7767350299547172909_n.jpg" alt="">
-            </figure>
-
-        </div>
-
-        <!-- hijo 2 -->
-        <div class="box-img">
-
-            <figure>
-                <img src="assets/img/275444676_3209697439306316_8232239509690686458_n.jpg" alt="">
-            </figure>
-        </div>
-
-        <!-- hijo 3 -->
-        <div class="box-img">
-
-            <figure>
-                <img src="assets/img/275301921_3209698752639518_3727130085533141703_n.jpg" alt="">
-            </figure>
-
-        </div>
-        <!-- hijo 4 -->
-        <div class="box-img">
-
-            <figure>
-                <img src="assets/img/291228064_3294485384160854_8698023097400578615_n.jpg" alt="">
-            </figure>
-
-        </div>
-        <!-- hijo 5 -->
-
-        <div class="box-img">
-
-            <figure>
-                <img src="assets/img/bestteam_theburtons_fm.jpg.opdownload" alt="">
-            </figure>
-
-        </div>
-
-        <!-- hijo 6 -->
-        <div class="box-img">
-
-            <figure>
-                <img src="assets/img/torneo-magic.jpg" alt="">
-            </figure>
-
-        </div>
-        <!-- hijo  -->
-        <div class="box-img">
-
-            <figure>
-                <img src="assets/img/gppor_summit_liliana.jpg" alt="">
-            </figure>
-
-        </div>
-    </div>
-
-
-    <!-- fin galeria -->
-
-
     <footer class="text-center text-lg-start">
         <!-- Grid container -->
         <div class="container">
@@ -328,7 +369,6 @@
                     © 2022 Copyright TCG - IMPERIO
                 </div>
             </div>
-            <
     </footer>
 
 

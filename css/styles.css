@@ -16,6 +16,8 @@
   .header .navbar div {
     background-color: #260454;
     height: 35px; }
+    .header .navbar div ul {
+      background-color: #260454; }
     .header .navbar div a {
       color: #fffefd; }
   .header .navbar .carrito {
@@ -34,7 +36,8 @@ a:hover {
   border-radius: 4px; }
 
 body {
-  background-color: #0f021b; }
+  background-color: #0f021b;
+  overflow-x: hidden; }
 
 .main__index {
   display: flex;
@@ -60,24 +63,51 @@ h1 {
   font-size: 2rem;
   font-family: 'Kdam Thmor Pro', sans-serif; }
 
-main section h2 {
-  color: whitesmoke;
-  margin-left: 25px;
+main .carrusel .carousel-inner img {
+  width: 100%;
+  max-height: 450px; }
+
+main .carrusel .carousel-inner {
+  height: 450px;
+  width: 100%; }
+
+main .carrusel .carousel-item h5 {
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  color: seagreen; }
+
+main .carrusel .carousel-item p {
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  color: #fffefd; }
+
+main .container {
+  padding: 10px; }
+
+main .main__noticias {
+  display: flex;
+  margin-top: 25px;
+  justify-content: space-between; }
+  main .main__noticias iframe {
+    padding: 20px;
+    width: 350px;
+    height: 280px; }
+  main .main__noticias h2 {
+    color: whitesmoke;
+    padding: 20px;
+    font-family: 'Kdam Thmor Pro', sans-serif; }
+  main .main__noticias p {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: smaller;
+    padding: 20px;
+    color: #fffefd; }
+
+main .noticias section p {
+  padding: 20px;
+  color: #fffefd;
   font-family: 'Kdam Thmor Pro', sans-serif; }
 
-iframe {
-  width: 350px;
-  height: 250px;
-  margin-left: 25px;
-  margin-top: 5px; }
-
-p {
-  width: 250px;
-  margin-left: 25px;
-  margin-top: 5px;
-  color: #d8d3e4;
-  font-family: 'Kdam Thmor Pro', sans-serif;
-  font-size: smaller; }
+main .noticias section img:hover {
+  transition: border .3s;
+  border: solid #400466 3.5px; }
 
 .noticias {
   display: flex; }
@@ -162,126 +192,23 @@ footer {
     footer div img {
       width: 150%;
       height: 100%; }
+  footer div li p {
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    color: #fffefd; }
   footer div .footer__derechos {
     color: #fffefd;
     font-family: 'Kdam Thmor Pro', sans-serif; }
 
-/*----- blog -----*/
-.main__blog {
-  display: flex;
-  flex-direction: column;
-  justify-items: center; }
-
-.main__blog--parrafo {
-  width: 75%;
-  margin-top: 10px;
-  margin-left: 10%; }
-
-.blog__img {
-  width: 20%;
-  margin-left: 35%; }
-
 /*------ranking------ */
-.container__img__ranking {
-  width: 100%;
-  max-width: 1100px;
-  margin-left: 150px;
-  margin-bottom: 60px;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(5, 170px);
-  grid-gap: 5px; }
+.card {
+  background: #222;
+  border: 1px solid #dd2476;
+  color: rgba(250, 250, 250, 0.8);
+  margin-bottom: 2rem; }
 
-.container__img__ranking .box__img__ranking div {
-  width: 100%;
-  height: 100%; }
-
-.container__img__ranking .box__img__ranking img {
-  width: 100%;
-  height: 50%;
-  object-fit: cover; }
-
-.container__img__ranking .box__img__ranking p {
-  width: 100%;
-  height: auto;
-  margin: auto; }
-
-.player__name {
-  color: #fffefd; }
-
-.player__info {
-  font-size: 12px; }
-
-.container__img__ranking .box__img__ranking hr {
-  background-color: #ffffff;
-  height: 3px; }
-
-.container__img__ranking .box__img__ranking h4 {
-  color: #ffffff;
-  margin-top: 40px; }
-
-.container__img__ranking .box__img__ranking:nth-child(1) {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 3;
-  border: solid #aa058b 2px;
-  text-align: center; }
-
-.container__img__ranking .box__img__ranking:nth-child(2) {
-  grid-column-start: 3;
-  grid-column-end: 5;
-  grid-row-start: 1;
-  grid-row-end: 3;
-  border: solid #aa058b 2px;
-  text-align: center; }
-
-.container__img__ranking .box__img__ranking:nth-child(3) {
-  grid-column-start: 5;
-  grid-column-end: 7;
-  grid-row-start: 1;
-  grid-row-end: 3;
-  border: solid #aa058b 2px;
-  text-align: center; }
-
-.container__img__ranking .box__img__ranking:nth-child(4) {
-  grid-column-start: 7;
-  grid-column-end: 9;
-  grid-row-start: 1;
-  grid-row-end: 3;
-  border: solid #aa058b 2px;
-  text-align: center; }
-
-.container__img__ranking .box__img__ranking:nth-child(5) {
-  grid-column-start: 9;
-  grid-column-end: 11;
-  grid-row-start: 1;
-  grid-row-end: 3;
-  border: solid #aa058b 2px;
-  text-align: center; }
-
-.container__img__ranking .box__img__ranking:nth-child(6) {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 3;
-  grid-row-end: 5;
-  border: solid #aa058b 2px;
-  text-align: center; }
-
-.container__img__ranking .box__img__ranking:nth-child(7) {
-  grid-column-start: 3;
-  grid-column-end: 5;
-  grid-row-start: 3;
-  grid-row-end: 5;
-  border: solid #aa058b 2px;
-  text-align: center; }
-
-.container__img__ranking .box__img__ranking:hover {
-  transition: border .3s;
-  border: solid #400466 3.5px; }
-
-section .animate__animated {
-  --animate-duration: 2s; }
+.card:hover {
+  transition: border .2s;
+  border: solid #dd2476 3px; }
 
 /* -----CONTACTO----- */
 h6 {
@@ -320,14 +247,16 @@ h6 {
 .main__blog .main__blog--about p {
   width: 100%;
   margin: 15px;
-  font-size: 16px; }
+  font-size: 16px;
+  color: #fffefd;
+  font-family: 'Kdam Thmor Pro', sans-serif; }
 
 /* ---- tienda----- */
 .main__tienda div {
   transition: .5; }
   .main__tienda div .card {
     width: 14rem;
-    margin: 15px;
+    margin: 5px;
     background-color: rgba(3, 60, 93, 0.6);
     text-align: center; }
   .main__tienda div h5 {
