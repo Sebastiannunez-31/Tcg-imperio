@@ -10,7 +10,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
 
-/* -----menu navegacion -----*/
+
+html, body {
+    background-color: $color-body;
+    overflow-x: hidden;
+}
+
+/* menu navegacion */
+
 .header {
     background-color: #260454;
     font-family: 'Kdam Thmor Pro', sans-serif;
@@ -69,10 +76,6 @@ a:hover {
 
 
 
-body {
-    background-color: $color-body;
-    overflow-x: hidden;
-}
 
 
 
@@ -135,152 +138,25 @@ main {
         padding: 10px;
     }
 
-
-
-    .main__noticias {
-        display: flex;
-
-        margin-top: 25px;
-        justify-content: space-between;
-
-        iframe {
-            padding: 20px;
-            width: 350px;
-            height: 280px;
-        }
-
-        h2 {
-            color: whitesmoke;
-            padding: 20px;
-            font-family: 'Kdam Thmor Pro', sans-serif;
-        }
-
-
-        p {
-            font-family: 'Kdam Thmor Pro', sans-serif;
-            font-size: smaller;
-            padding: 20px;
-            color: #fffefd;
-
-        }
-    }
-
-    .noticias {
-        section {
-            p {
-                padding: 20px;
-                color: #fffefd;
-                font-family: 'Kdam Thmor Pro', sans-serif;
-
-            }
-
-            img:hover {
-                transition: border .3s;
-                border: solid rgb(64, 4, 102) 3.5px;
-            }
-        }
-    }
 }
-
-
-
-
-
-
-
 
 .noticias {
-    display: flex;
+    section {
+        p {
+            padding: 20px;
+            color: #fffefd;
+            font-family: 'Kdam Thmor Pro', sans-serif;
 
+        }
 
-}
-
-.noticias__img {
-    width: 220px;
-    height: 150px;
-    margin-left: 25px;
-
-}
-
-/* galeria */
-.container-img {
-    width: 100%;
-    max-width: 1100px;
-    margin-left: 150px;
-    margin-bottom: 60px;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-gap: 5px
-}
-
-.container-img .box-img figure {
-    width: 100%;
-    height: 100%;
-
-
-}
-
-.container-img .box-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+        img:hover {
+            transition: border .3s;
+            border: solid rgb(64, 4, 102) 3.5px;
+        }
+    }
 }
 
 
-
-.container-img .box-img:nth-child(1) {
-
-    grid-column-start: 1;
-    grid-column-end: 3;
-    border: solid rgb(170, 5, 139) 2px;
-}
-
-.container-img .box-img:nth-child(2) {
-
-    grid-column-start: 3;
-    grid-column-end: 7;
-    border: solid rgb(170, 5, 139)2px;
-}
-
-.container-img .box-img:nth-child(3) {
-
-    grid-column-start: 1;
-    grid-column-end: 6;
-    border: solid rgb(170, 5, 139) 2px;
-}
-
-.container-img .box-img:nth-child(4) {
-
-    grid-column-start: 6;
-    grid-column-end: 9;
-    border: solid rgb(170, 5, 139)2px;
-}
-
-.container-img .box-img:nth-child(5) {
-
-    grid-column-start: 9;
-    grid-column-end: 12;
-    border: solid rgb(170, 5, 139) 2px;
-}
-
-.container-img .box-img:nth-child(6) {
-
-    grid-column-start: 1;
-    grid-column-end: 7;
-    border: solid rgb(170, 5, 139) 2px;
-}
-
-.container-img .box-img:nth-child(7) {
-
-    grid-column-start: 7;
-    grid-column-end: 12;
-    border: solid rgb(170, 5, 139) 2px;
-}
-
-.container-img .box-img:hover {
-    transition: border .2s;
-    border: solid rgb(64, 4, 102) 4px;
-}
 
 
 /* ------footer-----*/
@@ -391,7 +267,7 @@ main {
 
         div {
             span {
-                margin: 5px;
+
                 margin-bottom: 20px;
                 position: relative;
                 background-color: #650E77;
@@ -470,12 +346,13 @@ main {
     }
 
 }
+
 /* galeria index */
 .galeria__index {
-    
+
 
     .galeria--img {
-        
+
         width: 30%;
         height: 100%;
         object-fit: cover;
@@ -491,9 +368,8 @@ main {
         max-width: 600px;
         max-height: 350px;
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: center;
-        gap: 10px;
 
     }
 
