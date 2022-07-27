@@ -1,0 +1,78 @@
+
+
+
+
+
+
+
+   main {
+    .carrusel {
+
+
+        .carousel-inner img {
+            width: 100%;
+
+        }
+
+        /*
+        .carousel-inner {
+            height: 650px;
+            width: 100%;
+        } */
+
+        .carousel-item {
+            h5 {
+                font-family: 'Kdam Thmor Pro', sans-serif;
+                color: seagreen;
+            }
+
+            p {
+                font-family: 'Kdam Thmor Pro', sans-serif;
+                color: #fffefd;
+            }
+        }
+    }
+
+    .container {
+        padding: 10px;
+    }
+  
+}
+
+
+/* galeria index */
+.galeria__index {
+
+
+    .galeria--img {
+
+        width: 30%;
+        height: 100%;
+        margin-left: 20px;
+
+        -webkit-box-reflect: below 2px linear-gradient(transparent, transparent, #0004);
+
+        transform-origin: center;
+        transform: perspective(800px) rotateY(25deg);
+        transition: 0.5s;
+    }
+
+    .galeria__index {
+        max-width: 600px;
+        max-height: 350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .galeria__index:hover .galeria--img {
+        opacity: 1.3;
+    }
+
+    .galeria--img:hover {
+        transform: perspective(800px) rotateY(0deg);
+        opacity: 4;
+    }
+
+}

@@ -1,0 +1,54 @@
+
+
+
+main {
+
+
+    h3 {
+        color: rgb(216, 211, 228);
+        font-family: 'Kdam Thmor Pro', sans-serif;
+        font-size: 18px
+    }
+
+    .row {
+
+        .contacto__check {
+            background-color: #650E77;
+        }
+
+        label {
+            font-family: 'Kdam Thmor Pro', sans-serif;
+            color: #fffefd;
+        }
+
+        textarea{
+            width: 100%; 
+            height: 150px;
+        }
+
+        hr {
+            height: 5px;
+            background-color: #e793f4d7;
+
+        }
+
+        div{
+            text-align: center;
+            span {
+
+                margin-bottom: 20px;
+                position: relative;
+                background-color: #650E77;
+                font-family: 'Kdam Thmor Pro', sans-serif;
+                border: none;
+                border-radius: 35px;
+            }
+
+        }
+
+        span:hover {
+            background-color: #e793f4d7;
+        }
+    }
+
+}
