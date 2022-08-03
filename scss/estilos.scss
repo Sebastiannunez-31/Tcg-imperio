@@ -1,7 +1,9 @@
 /* INDEX */
 
 @import "utilities/variables";
+@import "base";
 @import "layout/nav";
+@import "utilities/mixins";
 @import "views/index";
 @import "components/card";
 @import "views/blog";
@@ -11,56 +13,3 @@
 
 @import "utilities/mediaqueries";
 
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html,
-body {
-    background-color: $color-body;
-    overflow-x: hidden;
-
-}
-
- 
-
-
-    h1 {
-        font-family: 'Kdam Thmor Pro', sans-serif;
-        color: #ffffff;
-        text-align: center;
-        margin-top: 70px;
-    }
-
-    .seccion__titulo {
-        color: #650E77;
-        margin-top: 50px;
-        margin: 1rem;
-        font-size: 2rem;
-        font-family: 'Kdam Thmor Pro', sans-serif;
-    }
-
-
-
-/*------ranking------ */
-
-
-
-
-
-
-
-/* -----CONTACTO----- */
-
-
-/*  */
-
-
-
-/* -----BLOG------ */
-
-
-/* ---- tienda----- */

@@ -1,0 +1,26 @@
+@mixin h1 {
+    font-family: $font-family;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 70px;
+
+
+}
+
+@mixin h2 {
+    color:$color-primary;
+    margin-top: 50px;
+    margin: 1rem;
+    font-size: 2rem;
+    font-family: $font-family;
+}
+
+
+h1 {
+    @include h1;
+
+}
+
+.seccion__titulo {
+    @include h2;
+}

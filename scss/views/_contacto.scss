@@ -5,20 +5,20 @@ main {
 
 
     h3 {
-        color: rgb(216, 211, 228);
-        font-family: 'Kdam Thmor Pro', sans-serif;
+        color: $font-color;
+        font-family: $font-family;
         font-size: 18px
     }
 
     .row {
 
         .contacto__check {
-            background-color: #650E77;
+            background-color: $color-primary;
         }
 
         label {
-            font-family: 'Kdam Thmor Pro', sans-serif;
-            color: #fffefd;
+            font-family: $font-family;
+            color: $font-color;
         }
 
         textarea{
@@ -28,7 +28,7 @@ main {
 
         hr {
             height: 5px;
-            background-color: #e793f4d7;
+            background-color: $back-color-secondary;
 
         }
 
@@ -38,8 +38,8 @@ main {
 
                 margin-bottom: 20px;
                 position: relative;
-                background-color: #650E77;
-                font-family: 'Kdam Thmor Pro', sans-serif;
+                background-color: $color-primary;
+                font-family: $font-family;
                 border: none;
                 border-radius: 35px;
             }
@@ -47,7 +47,7 @@ main {
         }
 
         span:hover {
-            background-color: #e793f4d7;
+            background-color:$back-color-secondary;
         }
     }
 
