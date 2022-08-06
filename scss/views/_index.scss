@@ -17,12 +17,13 @@
         .carousel-item {
             h5 {
                 font-family: $font-family;
-                color: seagreen;
+                color:$color-primary;
             }
 
             p {
                 font-family: $font-family;
                 color: $font-color;
+                text-shadow: black;
             }
         }
     }

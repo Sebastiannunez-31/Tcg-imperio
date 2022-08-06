@@ -31,7 +31,15 @@
             a {
 
                 color: #fffefd;
+                
+            }& a:hover {
+                position: relative;
+                transition: background-color .5s;
+                background-color: #a245b1d7;
+                border-radius: 4px;
+            
             }
+
         }
 
         div {
@@ -45,21 +53,7 @@
 
         }
 
-        div {
-            .hover:hover {
-                background-color: rgb(6, 144, 151);
-                transition: background-color.2s;
-                border-radius: 5px;
-            }
-        }
+        
     }
-
-}
-
-a:hover {
-    position: relative;
-    transition: background-color .5s;
-    background-color: #a245b1d7;
-    border-radius: 4px;
 
 }

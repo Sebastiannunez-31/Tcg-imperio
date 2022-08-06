@@ -24,19 +24,14 @@ html, body {
     background-color: #260454; }
   .header .navbar div a {
     color: #fffefd; }
+  .header .navbar div a:hover {
+    position: relative;
+    transition: background-color .5s;
+    background-color: #a245b1d7;
+    border-radius: 4px; }
   .header .navbar div .carrito {
     height: 50px;
     width: 50px; }
-  .header .navbar div .hover:hover {
-    background-color: #069097;
-    transition: background-color 0.2s;
-    border-radius: 5px; }
-
-a:hover {
-  position: relative;
-  transition: background-color .5s;
-  background-color: #a245b1d7;
-  border-radius: 4px; }
 
 h1 {
   font-family: "Kdam Thmor Pro", sans-serif;
@@ -56,11 +51,12 @@ main .carrusel .carousel-inner img {
 
 main .carrusel .carousel-item h5 {
   font-family: "Kdam Thmor Pro", sans-serif;
-  color: seagreen; }
+  color: #650E77; }
 
 main .carrusel .carousel-item p {
   font-family: "Kdam Thmor Pro", sans-serif;
-  color: #fffefd; }
+  color: #fffefd;
+  text-shadow: black; }
 
 main .container {
   padding: 10px; }
