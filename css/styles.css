@@ -64,7 +64,6 @@ main .container {
   .galeria__index .galeria--img {
     width: 30%;
     height: 100%;
-    margin-left: 20px;
     -webkit-box-reflect: below 2px linear-gradient(transparent, transparent, #0004);
     transform-origin: center;
     transform: perspective(800px) rotateY(25deg);
@@ -205,9 +204,8 @@ footer {
   /* galeria index */
   .galeria__index {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 600px; } }
+    align-items: flex-end;
+    height: 280px; } }
 
 /* pantallas tablet */
 @media screen and (min-width: 577px) and (max-width: 991px) {
