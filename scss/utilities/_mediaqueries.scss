@@ -1,0 +1,93 @@
+/* pantalla movil */
+@media screen and (max-width:576px) {
+
+    .main__blog--about {
+        display: flex;
+        flex-direction: column;
+
+        img {
+
+            width: 280px;
+            height: 210px;
+            margin: 8px;
+        }
+    }
+
+    /* imagen footer */
+    .__img {
+        width: 100%;
+    }
+
+    /* carrusel */
+    .carousel-inner img {
+        height: 180px;
+        width: 100%;
+        object-position: bottom;
+        object-fit: contain;
+    }
+
+    /* galeria index */
+    .galeria__index {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 600px;
+     
+        
+    }
+
+
+}
+
+/* pantallas tablet */
+@media screen and(min-width: 577px) and (max-width:991px) {
+
+    .main__blog--about {
+        display: flex;
+        flex-direction: column;
+
+        img {
+
+            width: 400px;
+            height: 210px;
+            margin: 8px;
+        }
+    }
+
+    .__img {
+        width: 100%;
+    }
+
+    .carousel-inner img {
+        height: 280px;
+        width: 100%;
+        object-position: bottom;
+
+    }
+
+     /* galeria index */
+     .galeria__index {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+     
+     
+        
+    }
+}
+
+/* desktop */
+@media screen and(min-width:991px) {
+
+    .main__blog--about {
+        display: flex;
+        flex-direction: column;
+
+        img {
+
+            width: 400px;
+            height: 210px;
+            margin: 8px;
+        }
+    }
+}

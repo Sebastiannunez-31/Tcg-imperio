@@ -26,6 +26,7 @@
 
 .card:hover {
     transition: border .2s;
-    border: solid #dd2476 3px;
+    border: solid $hover-color 1px;
+    cursor: pointer;
 
 }

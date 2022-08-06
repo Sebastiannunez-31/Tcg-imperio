@@ -46,44 +46,54 @@ h1 {
   font-size: 2rem;
   font-family: "Kdam Thmor Pro", sans-serif; }
 
-main .carrusel .carousel-inner img {
-  width: 100%; }
-
-main .carrusel .carousel-item h5 {
+main .carrusel .carousel-item .carousel-caption h5 {
   font-family: "Kdam Thmor Pro", sans-serif;
   color: #650E77; }
 
-main .carrusel .carousel-item p {
+main .carrusel .carousel-item .carousel-caption p {
   font-family: "Kdam Thmor Pro", sans-serif;
   color: #fffefd;
-  text-shadow: black; }
+  text-shadow: black 0.1em 0.1em 0.2em; }
 
 main .container {
   padding: 10px; }
 
 /* galeria index */
-.galeria__index .galeria--img {
-  width: 30%;
-  height: 100%;
-  margin-left: 20px;
-  -webkit-box-reflect: below 2px linear-gradient(transparent, transparent, #0004);
-  transform-origin: center;
-  transform: perspective(800px) rotateY(25deg);
-  transition: 0.5s; }
+.galeria__index {
+  justify-content: space-evenly; }
+  .galeria__index .galeria--img {
+    width: 30%;
+    height: 100%;
+    margin-left: 20px;
+    -webkit-box-reflect: below 2px linear-gradient(transparent, transparent, #0004);
+    transform-origin: center;
+    transform: perspective(800px) rotateY(25deg);
+    transition: 0.5s; }
+  .galeria__index .galeria__index {
+    max-width: 600px;
+    max-height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .galeria__index .galeria__index:hover .galeria--img {
+    opacity: 1.3; }
+  .galeria__index .galeria--img:hover {
+    transform: perspective(800px) rotateY(0deg);
+    opacity: 4; }
 
-.galeria__index .galeria__index {
-  max-width: 600px;
-  max-height: 350px;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.galeria__index .galeria__index:hover .galeria--img {
-  opacity: 1.3; }
-
-.galeria__index .galeria--img:hover {
-  transform: perspective(800px) rotateY(0deg);
-  opacity: 4; }
+.noticias__index {
+  padding: 15px; }
+  .noticias__index .card-title {
+    margin-top: 10px; }
+  .noticias__index iframe {
+    width: 100%;
+    height: 100%;
+    padding: 8px; }
+  .noticias__index p {
+    font-family: "Kdam Thmor Pro", sans-serif; }
+  .noticias__index a {
+    text-decoration: none;
+    color: #fffefd; }
 
 .card {
   background: #222;
@@ -100,12 +110,8 @@ main .container {
 
 .card:hover {
   transition: border .2s;
-  border: solid #dd2476 3px; }
-
-.main__blog .main__blog--about img {
-  width: 400px;
-  height: 250px;
-  margin: 15px; }
+  border: solid #9900ec 1px;
+  cursor: pointer; }
 
 .main__blog .main__blog--about p {
   width: 100%;
@@ -177,3 +183,59 @@ footer {
   footer div .footer__derechos {
     color: #fffefd;
     font-family: 'Kdam Thmor Pro', sans-serif; }
+
+/* pantalla movil */
+@media screen and (max-width: 576px) {
+  .main__blog--about {
+    display: flex;
+    flex-direction: column; }
+    .main__blog--about img {
+      width: 280px;
+      height: 210px;
+      margin: 8px; }
+  /* imagen footer */
+  .__img {
+    width: 100%; }
+  /* carrusel */
+  .carousel-inner img {
+    height: 180px;
+    width: 100%;
+    object-position: bottom;
+    object-fit: contain; }
+  /* galeria index */
+  .galeria__index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px; } }
+
+/* pantallas tablet */
+@media screen and (min-width: 577px) and (max-width: 991px) {
+  .main__blog--about {
+    display: flex;
+    flex-direction: column; }
+    .main__blog--about img {
+      width: 400px;
+      height: 210px;
+      margin: 8px; }
+  .__img {
+    width: 100%; }
+  .carousel-inner img {
+    height: 280px;
+    width: 100%;
+    object-position: bottom; }
+  /* galeria index */
+  .galeria__index {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; } }
+
+/* desktop */
+@media screen and (min-width: 991px) {
+  .main__blog--about {
+    display: flex;
+    flex-direction: column; }
+    .main__blog--about img {
+      width: 400px;
+      height: 210px;
+      margin: 8px; } }
