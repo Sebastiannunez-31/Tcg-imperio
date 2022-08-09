@@ -8,6 +8,18 @@ Tecnologias Usadas
 <ul>
 <li>html5</li>
 <li>css</li>
+<li>SASS</li>
 <h2> Imagenes del sitio</h2>
+<p>Galeria index</p>
 <img src="assets/img/galeria index.png">
+<p>Tienda</p>
+<p><i>Productos destacados con animación</i></p>
+<img src="assets/img/tienda.png">
+<p>Ranking</p>
+<img src="assets/img/ranking.png">
+<p>Blog</p>
+<img src="assets/img/blog.png">
+<p>Contacto</p>
+<img src="assets/img/formulario.png">
+
 </ul>
