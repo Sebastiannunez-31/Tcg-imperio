@@ -8,4 +8,6 @@ Tecnologias Usadas
 <ul>
 <li>html5</li>
 <li>css</li>
+<h2> Imagenes del sitio</h2>
+<img src="assets/img/galeria index.png">
 </ul>
